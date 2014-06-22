@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F33AF3F1956A4A000BF88E3 /* DDFileReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F33AF3E1956A4A000BF88E3 /* DDFileReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F33AF451956A4A000BF88E3 /* DDFileReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F33AF391956A4A000BF88E3 /* DDFileReader.framework */; };
+		1F33AF4C1956A4A000BF88E3 /* DDFileReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F33AF4B1956A4A000BF88E3 /* DDFileReaderTests.swift */; };
+		1F33AF561956A4CF00BF88E3 /* DDFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F33AF551956A4CF00BF88E3 /* DDFileReader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F33AF461956A4A000BF88E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F33AF301956A4A000BF88E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F33AF381956A4A000BF88E3;
+			remoteInfo = DDFileReader;
+		};
+		1F5892411956FBA20033A3D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F33AF301956A4A000BF88E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F33AF381956A4A000BF88E3;
+			remoteInfo = DDFileReader;
+		};
+		1F5892431956FBA20033A3D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F33AF301956A4A000BF88E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F33AF381956A4A000BF88E3;
+			remoteInfo = DDFileReader;
+		};
+		1FD46941195716F200BC0073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F33AF301956A4A000BF88E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F33AF381956A4A000BF88E3;
+			remoteInfo = DDFileReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F33AF391956A4A000BF88E3 /* DDFileReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DDFileReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F33AF3D1956A4A000BF88E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F33AF3E1956A4A000BF88E3 /* DDFileReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDFileReader.h; sourceTree = "<group>"; };
+		1F33AF441956A4A000BF88E3 /* DDFileReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDFileReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F33AF4A1956A4A000BF88E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F33AF4B1956A4A000BF88E3 /* DDFileReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDFileReaderTests.swift; sourceTree = "<group>"; };
+		1F33AF551956A4CF00BF88E3 /* DDFileReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDFileReader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F33AF351956A4A000BF88E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F33AF411956A4A000BF88E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F33AF451956A4A000BF88E3 /* DDFileReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F33AF2F1956A4A000BF88E3 = {
+			isa = PBXGroup;
+			children = (
+				1F33AF3B1956A4A000BF88E3 /* DDFileReader */,
+				1F33AF481956A4A000BF88E3 /* DDFileReaderTests */,
+				1F33AF3A1956A4A000BF88E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F33AF3A1956A4A000BF88E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F33AF391956A4A000BF88E3 /* DDFileReader.framework */,
+				1F33AF441956A4A000BF88E3 /* DDFileReaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F33AF3B1956A4A000BF88E3 /* DDFileReader */ = {
+			isa = PBXGroup;
+			children = (
+				1F33AF3E1956A4A000BF88E3 /* DDFileReader.h */,
+				1F33AF551956A4CF00BF88E3 /* DDFileReader.swift */,
+				1F33AF3C1956A4A000BF88E3 /* Supporting Files */,
+			);
+			path = DDFileReader;
+			sourceTree = "<group>";
+		};
+		1F33AF3C1956A4A000BF88E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F33AF3D1956A4A000BF88E3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F33AF481956A4A000BF88E3 /* DDFileReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F33AF4B1956A4A000BF88E3 /* DDFileReaderTests.swift */,
+				1F33AF491956A4A000BF88E3 /* Supporting Files */,
+			);
+			path = DDFileReaderTests;
+			sourceTree = "<group>";
+		};
+		1F33AF491956A4A000BF88E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F33AF4A1956A4A000BF88E3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F33AF361956A4A000BF88E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F33AF3F1956A4A000BF88E3 /* DDFileReader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F33AF381956A4A000BF88E3 /* DDFileReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F33AF4F1956A4A000BF88E3 /* Build configuration list for PBXNativeTarget "DDFileReader" */;
+			buildPhases = (
+				1F33AF341956A4A000BF88E3 /* Sources */,
+				1F33AF351956A4A000BF88E3 /* Frameworks */,
+				1F33AF361956A4A000BF88E3 /* Headers */,
+				1F33AF371956A4A000BF88E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDFileReader;
+			productName = DDFileReader;
+			productReference = 1F33AF391956A4A000BF88E3 /* DDFileReader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1F33AF431956A4A000BF88E3 /* DDFileReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F33AF521956A4A000BF88E3 /* Build configuration list for PBXNativeTarget "DDFileReaderTests" */;
+			buildPhases = (
+				1F33AF401956A4A000BF88E3 /* Sources */,
+				1F33AF411956A4A000BF88E3 /* Frameworks */,
+				1F33AF421956A4A000BF88E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F33AF471956A4A000BF88E3 /* PBXTargetDependency */,
+				1F5892421956FBA20033A3D1 /* PBXTargetDependency */,
+				1F5892441956FBA20033A3D1 /* PBXTargetDependency */,
+				1FD46942195716F200BC0073 /* PBXTargetDependency */,
+			);
+			name = DDFileReaderTests;
+			productName = DDFileReaderTests;
+			productReference = 1F33AF441956A4A000BF88E3 /* DDFileReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F33AF301956A4A000BF88E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Yasuhiro Inami";
+				TargetAttributes = {
+					1F33AF381956A4A000BF88E3 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					1F33AF431956A4A000BF88E3 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 1F33AF381956A4A000BF88E3;
+					};
+				};
+			};
+			buildConfigurationList = 1F33AF331956A4A000BF88E3 /* Build configuration list for PBXProject "DDFileReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1F33AF2F1956A4A000BF88E3;
+			productRefGroup = 1F33AF3A1956A4A000BF88E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F33AF381956A4A000BF88E3 /* DDFileReader */,
+				1F33AF431956A4A000BF88E3 /* DDFileReaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F33AF371956A4A000BF88E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F33AF421956A4A000BF88E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F33AF341956A4A000BF88E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F33AF561956A4CF00BF88E3 /* DDFileReader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F33AF401956A4A000BF88E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F33AF4C1956A4A000BF88E3 /* DDFileReaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F33AF471956A4A000BF88E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F33AF381956A4A000BF88E3 /* DDFileReader */;
+			targetProxy = 1F33AF461956A4A000BF88E3 /* PBXContainerItemProxy */;
+		};
+		1F5892421956FBA20033A3D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F33AF381956A4A000BF88E3 /* DDFileReader */;
+			targetProxy = 1F5892411956FBA20033A3D1 /* PBXContainerItemProxy */;
+		};
+		1F5892441956FBA20033A3D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F33AF381956A4A000BF88E3 /* DDFileReader */;
+			targetProxy = 1F5892431956FBA20033A3D1 /* PBXContainerItemProxy */;
+		};
+		1FD46942195716F200BC0073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F33AF381956A4A000BF88E3 /* DDFileReader */;
+			targetProxy = 1FD46941195716F200BC0073 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F33AF4D1956A4A000BF88E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1F33AF4E1956A4A000BF88E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1F33AF501956A4A000BF88E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = DDFileReader/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F33AF511956A4A000BF88E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = DDFileReader/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1F33AF531956A4A000BF88E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DDFileReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F33AF541956A4A000BF88E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DDFileReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F33AF331956A4A000BF88E3 /* Build configuration list for PBXProject "DDFileReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F33AF4D1956A4A000BF88E3 /* Debug */,
+				1F33AF4E1956A4A000BF88E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F33AF4F1956A4A000BF88E3 /* Build configuration list for PBXNativeTarget "DDFileReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F33AF501956A4A000BF88E3 /* Debug */,
+				1F33AF511956A4A000BF88E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F33AF521956A4A000BF88E3 /* Build configuration list for PBXNativeTarget "DDFileReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F33AF531956A4A000BF88E3 /* Debug */,
+				1F33AF541956A4A000BF88E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F33AF301956A4A000BF88E3 /* Project object */;
+}
