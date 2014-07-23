@@ -27,17 +27,17 @@ class DDFileReaderTests: XCTestCase
         var line: String
         
         line = reader.readLine()
-        XCTAssertEqualObjects(line, "//\n",
+        XCTAssertEqual(line, "//\n",
             "Should be equal to 1st line of this file.")
         
         line = reader.readLine()
-        XCTAssertEqualObjects(line, "//  DDFileReaderTests.swift\n",
+        XCTAssertEqual(line, "//  DDFileReaderTests.swift\n",
             "Should be equal to 2nd line of this file.")
         
         line = reader.readLine()
         line = reader.readLine()
         line = reader.readLine()
-        XCTAssertEqualObjects(line, "//  Created by Yasuhiro Inami on 2014/06/22.\n",
+        XCTAssertEqual(line, "//  Created by Yasuhiro Inami on 2014/06/22.\n",
             "Should be equal to 5th line of this file.")
     }
     
@@ -47,17 +47,17 @@ class DDFileReaderTests: XCTestCase
         var line: String
         
         line = reader.readTrimmedLine()
-        XCTAssertEqualObjects(line, "//",
+        XCTAssertEqual(line, "//",
             "Should be equal to 1st line of this file.")
         
         line = reader.readTrimmedLine()
-        XCTAssertEqualObjects(line, "//  DDFileReaderTests.swift",
+        XCTAssertEqual(line, "//  DDFileReaderTests.swift",
             "Should be equal to 2nd line of this file.")
         
         line = reader.readTrimmedLine()
         line = reader.readTrimmedLine()
         line = reader.readTrimmedLine()
-        XCTAssertEqualObjects(line, "//  Created by Yasuhiro Inami on 2014/06/22.",
+        XCTAssertEqual(line, "//  Created by Yasuhiro Inami on 2014/06/22.",
             "Should be equal to 5th line of this file.")
     }
     
