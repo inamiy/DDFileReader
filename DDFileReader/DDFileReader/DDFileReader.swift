@@ -14,22 +14,30 @@ import Foundation
 // objective c - How to read data from NSFileHandle line by line? - Stack Overflow
 // http://stackoverflow.com/a/3711079/666371
 //
-class DDFileReader
+public class DDFileReader
 {
-    var lineDelimiter = "\n"
-    var chunkSize = 128
+    public var lineDelimiter = "\n"
+    public var chunkSize = 128
     
-    let filePath: NSString!
+    public let filePath: NSString
     
-    let _fileHandle: NSFileHandle
-    let _totalFileLength: CUnsignedLongLong
-    var _currentOffset: CUnsignedLongLong = 0
+    private let _fileHandle: NSFileHandle!
+    private let _totalFileLength: CUnsignedLongLong
+    private var _currentOffset: CUnsignedLongLong = 0
     
-    init(filePath: NSString!)
+    public init?(filePath: NSString)
     {
         self.filePath = filePath
-        self._fileHandle = NSFileHandle(forReadingAtPath: filePath)
-        self._totalFileLength = self._fileHandle.seekToEndOfFile()
+        if let fileHandle = NSFileHandle(forReadingAtPath: filePath as String) {
+            self._fileHandle = fileHandle
+            self._totalFileLength = self._fileHandle.seekToEndOfFile()
+        }
+        else {
+            self._fileHandle = nil
+            self._totalFileLength = 0
+            
+            return nil
+        }
     }
     
     deinit
@@ -37,7 +45,7 @@ class DDFileReader
         self._fileHandle.closeFile()
     }
     
-    func readLine() -> NSString!
+    public func readLine() -> NSString?
     {
         if self._currentOffset >= self._totalFileLength {
             return nil
@@ -77,24 +85,25 @@ class DDFileReader
         return line
     }
     
-    func readTrimmedLine() -> NSString!
+    public func readTrimmedLine() -> NSString?
     {
-        return self.readLine().stringByTrimmingCharactersInSet(NSCharacterSet(charactersInString: self.lineDelimiter))
+        let characterSet = NSCharacterSet(charactersInString: self.lineDelimiter)
+        return self.readLine()?.stringByTrimmingCharactersInSet(characterSet)
     }
     
-    func enumerateLinesUsingBlock(closure: (NSString!, inout Bool) -> Void)
+    public func enumerateLinesUsingBlock(closure: (line: NSString, stop: inout Bool) -> Void)
     {
-        var line: NSString! = nil
+        var line: NSString? = nil
         var stop = false
         while stop == false {
             line = self.readLine()
-            if !line { break }
+            if line == nil { break }
             
-            closure(line, &stop)
+            closure(line: line!, stop: &stop)
         }
     }
     
-    func resetOffset()
+    public func resetOffset()
     {
         self._currentOffset = 0
     }
@@ -102,15 +111,15 @@ class DDFileReader
 
 extension NSData
 {
-    func rangeOfData(dataToFind: NSData) -> NSRange
+    private func rangeOfData(dataToFind: NSData) -> NSRange
     {
         var searchIndex = 0
         var foundRange = NSRange(location: NSNotFound, length: dataToFind.length)
         
         for index in 0...length-1 {
             
-            let bytes_ = UnsafeArray(start: UnsafePointer<CUnsignedChar>(self.bytes), length: self.length)
-            let searchBytes_ = UnsafeArray(start: UnsafePointer<CUnsignedChar>(dataToFind.bytes), length: self.length)
+            let bytes_ = UnsafeBufferPointer(start: UnsafePointer<CUnsignedChar>(self.bytes), count: self.length)
+            let searchBytes_ = UnsafeBufferPointer(start: UnsafePointer<CUnsignedChar>(dataToFind.bytes), count: self.length)
             
             if bytes_[index] == searchBytes_[searchIndex] {
                 if foundRange.location == NSNotFound {

@@ -11,7 +11,6 @@
 		1F33AF451956A4A000BF88E3 /* DDFileReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F33AF391956A4A000BF88E3 /* DDFileReader.framework */; };
 		1F33AF4C1956A4A000BF88E3 /* DDFileReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F33AF4B1956A4A000BF88E3 /* DDFileReaderTests.swift */; };
 		1F33AF561956A4CF00BF88E3 /* DDFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F33AF551956A4CF00BF88E3 /* DDFileReader.swift */; };
-		1FD7CACE1980696E008CFBD7 /* DDFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F33AF551956A4CF00BF88E3 /* DDFileReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -246,7 +245,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FD7CACE1980696E008CFBD7 /* DDFileReader.swift in Sources */,
 				1F33AF4C1956A4A000BF88E3 /* DDFileReaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
