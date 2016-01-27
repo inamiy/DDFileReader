@@ -125,7 +125,7 @@ extension NSData
                 if foundRange.location == NSNotFound {
                     foundRange.location = index
                 }
-                searchIndex++
+                searchIndex += 1
                 if searchIndex >= dataToFind.length {
                     return foundRange
                 }
